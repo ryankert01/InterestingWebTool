@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark-reasonable.min.css" integrity="sha512-RwXJS3k4Z0IK6TGoL3pgQlA9g2THFhKL7z9TYWdAI8u6xK0AUuMWieJuWgTRayywC9A94ifUj1RzjDa1NIlUIg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>highting.js API</h1>
+    <br>
+    <h4>cpp</h4>
+    <pre>
+        <code class="cpp">
+          for(int i = 0; i < 100; i++){
+              if(i % 2 == 0){
+                  cout << endl;
+                  cout << 1;
+              } 
+          }
+        </code>
+      </pre>
+      <h4>js</h4>
+      <pre>
+        <code class="javascript">
+          $(document).ready(function() {
+            $('pre code').each(function(i, block) {
+              hljs.highlightBlock(block);
+            });
+          });
+        </code>
+      </pre>
+      <h4>html</h4>
+      <p>Use html entity encoder to convert the code first!</p>
+      <pre>
+        <code class="html">
+            &lt;pre&gt;
+            &lt;code class=&quot;cpp&quot;&gt;
+              for(int i = 0; i &lt; 100; i++){
+                  if(i % 2 == 0){
+                      cout &lt;&lt; endl;
+                      cout &lt;&lt; 1;
+                  } 
+              }
+            &lt;/code&gt;
+          &lt;/pre&gt;
+        </code>
+      </pre>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
