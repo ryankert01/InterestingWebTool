@@ -1,11 +1,13 @@
-body{
+body {
     text-align: center;
-    }
-    table{
+}
+
+table {
     width: 60%;
     margin: auto;
     font-size: 1.5em;
-    }
-    td{
+}
+
+td {
     border-bottom: 1px solid blue;
-    }
+}
