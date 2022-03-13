@@ -1,0 +1,12 @@
+body{
+    text-align: center;
+    background-color:hsl(12, 76%, 61%);
+    align-items:left;
+    justify-content: center;
+}
+.inputBlock{
+    background-color:#FFAD86;
+    padding: 10px;
+    font-size:20px;
+}
+
