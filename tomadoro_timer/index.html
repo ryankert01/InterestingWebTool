@@ -9,12 +9,15 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Tomadoro Timer</h1>
-        <div id="timer">00:00:00</div><br>
-        
-            a Tomato is <input type="text" id="tomadoroTime"> minutes<br>
-            break Time: <input type="text" id="breakTime"> minutes<br>
-            <button type="submit" id="go">Start</button>
-        <script src="main.js"></script>
+        <img src="https://vivaldi.com/wp-content/uploads/The_Pomodoro_timer_in_Vivaldi_browser-980x551.png"width="500px"/>
+        <div style="display:block; font-size:80px; margin:10px;"class="title;">Tomadoro Timer</div>
+        <div class="inputBlock">
+            <p id="timer">00:00:00</p>
+            <div style="padding:10px;">A Tomato is: <input type="text" id="tomadoroTime" placeholder="input a time"style="padding:5px 10px 5px 10px"> minutes<br></div>
+            <div style="padding:10px; margin:1px 0px 0px 0px">break Time: <input type="text" id="breakTime"placeholder="input a time" style="padding:5px 10px 5px 10px"> minutes<br></div>
+            <br />
+            <button type="submit" id="go" style="padding:10px">Start</button>
+            <script src="main.js"></script>
+        </div>
     </body>
 </html>
