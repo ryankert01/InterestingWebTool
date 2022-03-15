@@ -41,25 +41,29 @@ function printTime(){
     var seconds = ti;
     var timeString = ('0' + hours).slice(-2) + ':' +('0' + minutes).slice(-2) + ':' + ('0' + seconds).slice(-2);
     document.querySelector('#timer').innerHTML = timeString;
+    chh = 1;
 }
 
 function init_TomadoroTimer() {
     //console.log("initTomadoro")
+    chh = 1;
     setInterval(TomadoroTimer, 1000);
 
 }
 
-
+var chh = 0;
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#go').onclick = () => {
         const t = document.querySelector('#tomadoroTime').value;
         tomato = parseInt(t)*60;
         tomadoroTime = tomato;
+        
         flag = 0;
         breakTime = 60*parseInt(document.querySelector('#breakTime').value);
+        
         //console.log(tomadoroTime);
         //document.querySelector('#tomadoroTime').value = '';
-        if (tomadoroTime > 0) {
+        if (tomadoroTime > 0 && chh == 0) {
             init_TomadoroTimer();
         }
         // return init_TomadoroTimer; // stop form submiting

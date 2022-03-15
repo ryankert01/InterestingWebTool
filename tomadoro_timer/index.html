@@ -6,17 +6,18 @@
         <title>Tomadoro Timer</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://ryankert01.github.io/csslib/ver1.0/style.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <img src="https://vivaldi.com/wp-content/uploads/The_Pomodoro_timer_in_Vivaldi_browser-980x551.png"width="500px"/>
-        <div style="display:block; font-size:80px; margin:10px;"class="title;">Tomadoro Timer</div>
+        <img class="pic1" src="https://vivaldi.com/wp-content/uploads/The_Pomodoro_timer_in_Vivaldi_browser-980x551.png"/>
+        <div class="header">Tomadoro Timer</div>
+ 
         <div class="inputBlock">
             <p id="timer">00:00:00</p>
             <div style="padding:10px;">A Tomato is: <input type="text" id="tomadoroTime" placeholder="input a time"style="padding:5px 10px 5px 10px"> minutes<br></div>
             <div style="padding:10px; margin:1px 0px 0px 0px">break Time: <input type="text" id="breakTime"placeholder="input a time" style="padding:5px 10px 5px 10px"> minutes<br></div>
-            <br />
-            <button type="submit" id="go" style="padding:10px">Start</button>
+            <button type="submit" id="go" class="btn btn-secondary btn-lg">Start</button>
             <script src="main.js"></script>
         </div>
     </body>
